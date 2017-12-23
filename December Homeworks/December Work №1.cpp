@@ -1,4 +1,6 @@
 #include "iostream"
+using namespace std;
+ 
 bool isT(int n) {
 	int i, j, S, N, c = 0;
 	bool *mas;
@@ -17,12 +19,12 @@ bool isT(int n) {
 }
 int main() {
 	int n = 0, bu = -1, p = 1;
-	std::cin >> n;
+	cin >> n;
 	for (int i = 0; i<n; i++) {
-		std::cin >> bu;
+		cin >> bu;
 		if (bu != 0 && bu != 1)
 			if (isT(bu)) p *= bu;
 	}
-	std::cout << p;
+	cout << p;
 	return 0;
 }
