@@ -1,12 +1,21 @@
 #include <iostream>
+using namespace std;
 
 int s = 12;
-void printArr(int arr[], int n) { for (int i = 0; i<n; i++) std::cout << arr[i] << " "; std::cout << std::endl; }
+void printArr(int arr[], int n){ 
+	for (int i = 0; i < n; i++) 
+	cout << arr[i] << " "; 
+	cout << endl; 
+}
 
-void brf(int arr[], int n) {
-	for (int i = 0; i<10; i++) {
+void brf (int arr[], int n) {
+	for (int i = 0; i < 10; i++) {
 		if (arr[s - n] + 1 < 10) arr[s - n]++;
-		else { arr[s - n + 1]++; arr[s - n] = 0; return; }
+		else { 
+			arr[s - n + 1]++; 
+			arr[s - n] = 0; 
+			return; 
+		}
 		if ((arr[0] + arr[1] + arr[2]) % 2 == 0)
 			if ((arr[11] + arr[10] + arr[9]) % 3 == 0)
 				if ((arr[2] + arr[11] + arr[5] + arr[8]) % 11 == 0)
