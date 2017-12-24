@@ -1,5 +1,4 @@
 #include <iostream>
-#include <conio.h>
 using namespace std;
 
 void build_ziggurat(int** Ziggurat, int counter, int lenght) {
@@ -36,8 +35,6 @@ int main() {
 	}
 	counter = (lenght / 2) + (lenght % 2);
 	build_ziggurat(Ziggurat, counter, lenght);
-
-
 	system("pause");
 	return 0;
 }
