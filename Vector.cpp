@@ -1,4 +1,5 @@
 #include <iostream>
+using namespace std;
 
 class vector {
   int quantity;
@@ -10,11 +11,10 @@ public:
   data = new double[size];
   quantity = 0;
   }
-
   vector (){
     data = new double[1];
   }
-
+  
   void append (int new_size){
     double* temp = new double [new_size];
     for (int i = 0; i < size; i++)
@@ -23,13 +23,12 @@ public:
     data = temp;
     size = new_size;
   }
-
   const int& operator[](int i){
     return data[i];
   }
-
-  void push_back(double a){
-    if (quantity == size){
+  
+  void push_back(double a) {
+    if (quantity == size) {
     int new_size = 2*size;
     double* temp = new double [new_size];
     for (int i = 0; i < size; i++)
@@ -44,11 +43,9 @@ public:
   }
     quantity++;
   }
-
   int get_quantity(){
     return quantity;
   }
-
   int get_size(){
     return size;
   }
@@ -69,7 +66,7 @@ public:
     delete[] data;
     data = temp;
   }
-
+  
   int pop_back(){
     double* temp = new double[size];
     for (int i = 0; i < quantity - 1; i++)
@@ -84,6 +81,5 @@ public:
 
 int main()
   {
-
   return 0;
 }
