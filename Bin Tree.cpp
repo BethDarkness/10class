@@ -1,14 +1,13 @@
 #include <iostream>
 #include <queue>
-
 using namespace std;
-
+ 
 struct node {
     int data;
     node* left=NULL;
     node* right=NULL;
 };
-
+ 
 class BinTree {
     node* root;
     public:
@@ -95,7 +94,7 @@ class BinTree {
         deleteTree (root);
     }
 };
-
+ 
 int main () {
     return 0;
 }
