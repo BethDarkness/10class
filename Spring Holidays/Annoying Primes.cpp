@@ -1,6 +1,5 @@
 #include <iostream>
 #include <windows.h>
-
 using namespace std;
 
 void delete_annoying_primes(int* Array, int lenght) {
@@ -27,7 +26,6 @@ int main() {
 		cin >> Array[i];
 	}
 	delete_annoying_primes(Array, lenght);
-
 	system("pause");
 	return 0;
 }
