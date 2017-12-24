@@ -1,6 +1,5 @@
 #include <iostream>
 #include <string>
-
 using namespace std;
 
 struct node{
@@ -45,7 +44,5 @@ class stack{
 
 int main()
 {
-	            
-
 	return 0; 
 }
