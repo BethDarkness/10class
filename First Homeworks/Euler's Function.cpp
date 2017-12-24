@@ -2,7 +2,6 @@
 #include <conio.h>
 #include <vector>
 #include <math.h>
-
 using namespace std;
 
 void Eulers_formula(int a) {
@@ -23,13 +22,12 @@ void Eulers_formula(int a) {
 		}
 	}
 	cout << number_of_numbers << endl;
-	
 }
 
 int main() {
 	setlocale(0, "Russian");
 	int a;
-	cout << "‚âåäèòå ïðåäåë" << endl;
+	cout << "â€šÃ¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã¯Ã°Ã¥Ã¤Ã¥Ã«" << endl;
 	cin >> a;
 	Eulers_formula(a);
 	_getch();
