@@ -1,24 +1,23 @@
 #include <iostream>
 #include <conio.h>
-
 using namespace std;
 
 void build_ziggurat(int** Ziggurat, int counter, int lenght) {
 	int pos = 0;
 	int number = lenght;
 	for (int i = 0; i < counter; i++) {
-		for (int j = pos; j < number; j++) {				//fill upper and down stage
+		for (int j = pos; j < number; j++) {
 			Ziggurat[pos][j] = i;
 			Ziggurat[lenght - pos - 1][j] = i;
 		}
-		for (int j = pos; j < number; j++) {				//fill side stages
+		for (int j = pos; j < number; j++) {
 			Ziggurat[j][pos] = i;
 			Ziggurat[j][lenght - pos - 1] = i;
 		}
 		pos++;
 		number--;
 	}
-	for (int i = 0; i < lenght; i++) {						//output Array
+	for (int i = 0; i < lenght; i++) {
 		for (int j = 0; j < lenght; j++) {
 			cout << Ziggurat[j][i] << " ";
 		}
@@ -31,11 +30,11 @@ int main() {
 	int lenght = 5;
 	int counter;
 	cin >> lenght;
-	int** Ziggurat = new int*[lenght];		//create Array
+	int** Ziggurat = new int*[lenght];
 	for (int i = 0; i < lenght; i++) {
 		Ziggurat[i] = new int[lenght];
 	}
-	counter = (lenght / 2) + (lenght % 2);		//number of stages
+	counter = (lenght / 2) + (lenght % 2);
 	build_ziggurat(Ziggurat, counter, lenght);
 
 
