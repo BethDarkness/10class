@@ -1,15 +1,14 @@
 #include <iostream>
 #include <queue>
-
 using namespace std; 
-
+ 
 struct node {
     int data;
     node* left=NULL;
     node* right=NULL;
     int height;
 };
-
+ 
 class AVLTree {
     node* root;
     public:
@@ -176,7 +175,7 @@ class AVLTree {
         deleteTree (root);
     }
 };
-
+ 
 int main () {
     return 0;
 }
