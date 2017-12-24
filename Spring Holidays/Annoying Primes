@@ -1,5 +1,4 @@
 #include <iostream>
-#include <windows.h>
 using namespace std;
 
 void delete_annoying_primes(int* Array, int lenght) {
