@@ -1,5 +1,4 @@
 #include <iostream>
-
 using namespace std;
 
 void delete_duplicates(int* Array, int lenght) {
@@ -8,8 +7,7 @@ void delete_duplicates(int* Array, int lenght) {
 		for (int j = i + 1; j < lenght; j++) {
 			 if (Array[i] == Array[j]) {
 				 tmp++;
-			}
-			 
+			} 
 		}
 		if (!tmp) {
 			cout << Array[i] << endl;
@@ -17,7 +15,6 @@ void delete_duplicates(int* Array, int lenght) {
 		else
 			tmp = 0;
 	}
-	
 }
 
 int main() {
