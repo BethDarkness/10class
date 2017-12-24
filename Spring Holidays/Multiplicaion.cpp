@@ -1,5 +1,4 @@
 #include <iostream>
-
 using namespace std;
 
 int strange_multiply(int &a, int &b) {
@@ -13,10 +12,10 @@ int strange_multiply(int &a, int &b) {
 int main() {
 	setlocale(0, "Russian");
 	int a, b;
-	cout << "Ââåäèòå 2 ÷èñëà" << endl;
+	cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ 2 Ã·Ã¨Ã±Ã«Ã " << endl;
 	cin >> a >> b;
 	strange_multiply(a, b);
-	cout << "Ğåçóëüòàò: " << b << endl;
+	cout << "ÃÃ¥Ã§Ã³Ã«Ã¼Ã²Ã Ã²: " << b << endl;
 	system("pause");
 	return 0;
 }
