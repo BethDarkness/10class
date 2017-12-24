@@ -1,5 +1,4 @@
 #include <iostream>
-
 using namespace std;
 
 struct node{
@@ -8,7 +7,7 @@ struct node{
 };
 
 class list{
-    node* head;
+    node*head;
     public:
     list(int a){
         head=new node;
@@ -100,7 +99,6 @@ class list{
         }
     }
 };
-
 
 int main(){
     list L(12);
