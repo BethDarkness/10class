@@ -2,27 +2,23 @@
 #include <conio.h>
 #include <vector>
 #include <math.h>
-
 using namespace std;
 
 void Simple_Number(int a) {
-	
 	int p = 2;
 	bool check = 0;
 	int divider = 0;
-	
 	vector<int> array;								
 	array.resize(a - 1);
 	for (int i = 0; i < array.size(); i++) {
 		array[i] = i + 2;
 	}
-	
 	while (1) {
 		if (p*p > a) {
-			cout << "Ïðîñòîå ÷èñëî:1" << endl;
+			cout << "ÃÃ°Ã®Ã±Ã²Ã®Ã¥ Ã·Ã¨Ã±Ã«Ã®:1" << endl;
 			for (int i = 0; i < array.size(); i++) {
 				if (array[i] != 0) {
-					cout << "Ïðîñòîå ÷èñëî:" << array[i] << endl;
+					cout << "ÃÃ°Ã®Ã±Ã²Ã®Ã¥ Ã·Ã¨Ã±Ã«Ã®:" << array[i] << endl;
 				}
 			}
 			break;
@@ -51,7 +47,7 @@ void Simple_Number(int a) {
 int main() {
 	setlocale(0, "Russian");
 	int a;
-	cout << "Ââåäèòå ïðåäåë" << endl;
+	cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã¯Ã°Ã¥Ã¤Ã¥Ã«" << endl;
 	cin >> a;
 	Simple_Number(a);
 	_getch();
