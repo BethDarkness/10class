@@ -1,5 +1,4 @@
 #include <iostream>
-
 using namespace std;
 
 class vector_double {
@@ -64,6 +63,5 @@ class vector_double {
 };
         
 int main() {
-    
     return 0;
 }
