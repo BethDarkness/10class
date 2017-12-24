@@ -1,6 +1,5 @@
 #include <iostream>
 #include <windows.h>
-
 using namespace std;
 
 void dig_trench(int** Array, int lenght_x, int lenght_y) {
@@ -37,7 +36,6 @@ int main() {
 		Array[i] = new int[lenght_x];
 	}
 	dig_trench(Array, lenght_x, lenght_y);
-
 	system("pause");
 	return 0;
 } 
